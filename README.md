@@ -92,9 +92,12 @@ c. Create the last XML file, name it **border_button.xml**, put it under the dra
     </item>
 </selector>
 
-d. Under the **MainActivity.kt** make sure all Compose codes are removed. Use the following code inside the main class:
+d. Under the **MainActivity.kt** make sure all Compose codes are removed. Use the following code inside the main class as shown below:
 
- lateinit var username : EditText
+
+class MainActivity : ComponentActivity() {
+
+    lateinit var username : EditText
     lateinit var password : EditText
     lateinit var login : Button
 
@@ -112,10 +115,11 @@ d. Under the **MainActivity.kt** make sure all Compose codes are removed. Use th
             val password_in = password.text.toString()
             Log.i("test", "Username: $username_in and Password: $password_in")
             Toast.makeText(this@MainActivity, "Username: $username_in and Password: $password_in", Toast.LENGTH_LONG).show()
-
         }
-
     }
+
+}
+
 
 
 
