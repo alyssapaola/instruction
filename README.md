@@ -104,7 +104,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout2)
+        setContentView(R.layout.layout)
 
         username = findViewById(R.id.username_text)
         password = findViewById(R.id.password_text)
