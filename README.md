@@ -80,16 +80,17 @@ b. Create another XML file, name it **border_edittext.xml**, put it under the dr
 
 c. Create the last XML file, name it **border_button.xml**, put it under the drawable folder and use this code
 
-   <?xml version="1.0" encoding="utf-8"?>
-   <selector xmlns:android="http://schemas.android.com/apk/res/android" >
-       <item >
-           <shape android:shape="rectangle"  >
-               <corners android:radius="3dp" />
-               <stroke android:width="1dip" android:color="#5e7974" />
-               <gradient android:angle="-90" android:startColor="#8dbab3" android:endColor="#58857e" />
-           </shape>
-       </item>
-   </selector>
+
+      <?xml version="1.0" encoding="utf-8"?>
+      <selector xmlns:android="http://schemas.android.com/apk/res/android" >
+          <item >
+              <shape android:shape="rectangle"  >
+                  <corners android:radius="3dp" />
+                  <stroke android:width="1dip" android:color="#5e7974" />
+                  <gradient android:angle="-90" android:startColor="#8dbab3" android:endColor="#58857e" />
+              </shape>
+          </item>
+      </selector>
 
 d. Under the **MainActivity.kt** make sure all Compose codes are removed. Use the following code inside the main class as shown below:
 
