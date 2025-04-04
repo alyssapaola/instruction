@@ -81,6 +81,7 @@ b. Create another XML file, name it **border_edittext.xml**, put it under the dr
 
 c. Create the last XML file, name it **border_button.xml**, put it under the drawable folder and use this code
 
+
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android" >
     <item >
